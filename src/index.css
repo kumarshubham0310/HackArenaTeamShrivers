@@ -289,3 +289,146 @@ body {
   .cards-grid { grid-template-columns: 1fr; gap: 24px; }
   .card-body-text { max-width: 60%; }
 }
+.result-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+.red { background-color: #e53e3e; }    /* High Priority */
+.yellow { background-color: #d69e2e; } /* Low Priority */
+.orange { background-color: #dd6b20; } /* Medium Priority */
+
+.buffer-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px dashed #4a5568;
+}
+/* Citizen Section Wrapper */
+.citizen-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Upload Styling */
+.upload-area {
+  border: 2px dashed #cbd5e0;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: border 0.3s;
+}
+
+.upload-area:hover {
+  border-color: #4a90e2;
+}
+
+/* The "Buffering" Pulse Animation */
+.buffer-box {
+  padding: 20px;
+  background: #f7fafc;
+  border-radius: 8px;
+  margin-top: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Result Box Priority Colors */
+.result-box {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+}
+
+.priority-red { background: linear-gradient(135deg, #f56565, #e53e3e); }
+.priority-orange { background: linear-gradient(135deg, #ed8936, #dd6b20); }
+.priority-yellow { background: linear-gradient(135deg, #ecc94b, #d69e2e); }
+.citizen-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Upload Area Styling */
+.upload-area {
+  border: 2px dashed #cbd5e0;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background: #fcfcfc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.upload-area:hover {
+  border-color: #3182ce;
+  background: #ebf8ff;
+}
+
+/* Description Textarea Styling */
+.description-area textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.description-area textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+/* Professional Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background-color: #2c5282;
+  transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+  background-color: #a0aec0;
+}
+
+/* Loading/Buffering State */
+.buffer-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #edf2f7;
+  border-left: 4px solid #3182ce;
+  border-radius: 4px;
+  font-style: italic;
+  color: #4a5568;
+}
