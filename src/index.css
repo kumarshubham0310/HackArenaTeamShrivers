@@ -1,0 +1,291 @@
+/* Core Reset & Overalls */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FBFBFD;
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* App Main Container Layout Fix */
+.app-root-container {
+  min-height: 100vh;
+  background-color: #FBFBFD;
+}
+
+/* Navbar Styling */
+.navbar-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 14px 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4B5563;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #000000;
+}
+
+.nav-links a.active {
+  color: #0F172A;
+  font-weight: 600;
+  border-bottom: 2px solid #15803D;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.gov-button {
+  background-color: #0A3622;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section Aspect-Ratio Perfect Container */
+/* Hero Section: Container Wrapper */
+.hero-container {
+  position: relative;
+  width: 100%;
+  background-color: #FBFBFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Hero Image: Adjusted for perfect zoom/fit */
+.hero-image {
+  width: 100%;       /* Spans full width */
+  height: auto;      /* Maintains aspect ratio */
+  
+  display: block;
+   /* Ensures the whole image is visible (zoomed out) */
+  max-height: 150vh;  /* Prevents it from taking up too much vertical space */
+}
+
+/* Lotus icon anchor */
+.lotus-icon-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 30;
+}
+/* Platform Cards Section Base Wrapper */
+.cards-section {
+  position: relative;
+  background-color: #ffffff;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.03);
+  margin-top: -45px; 
+  padding: 48px 32px 72px 32px;
+  z-index: 20;
+}
+
+.cards-max {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  font-size: 14px;
+  color: #64748B;
+  font-weight: 500;
+}
+
+/* Landscape Grid Layout */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Horizontal Card Form Factor Blueprint */
+.card-wrapper {
+  position: relative;
+  border-radius: 16px;
+  padding: 24px 20px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Background Variations with Exact Color Matches */
+.card-citizen { background: linear-gradient(135deg, #F0F6FF 0%, #E6EFFF 100%); border: 1px solid #DBEAFE; }
+.card-innovator { background: linear-gradient(135deg, #F0F8F3 0%, #E6F4EB 100%); border: 1px solid #DCFCE7; }
+.card-gov { background: linear-gradient(135deg, #FFF5EE 0%, #FFEBE0 100%); border: 1px solid #FFEDD5; }
+
+/* Header Elements (Icon + Text side-by-side alignment) */
+.card-header-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-icon-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-bg-citizen { background-color: #0040A5; color: #ffffff; }
+.icon-bg-innovator { background-color: #0F763E; color: #ffffff; }
+.icon-bg-gov { background-color: #D9540B; color: #ffffff; }
+
+.card-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-meta { 
+  font-size: 11px; 
+  font-weight: 600;
+  margin-bottom: -2px;
+}
+.meta-citizen { color: #0040A5; }
+.meta-innovator { color: #0F763E; }
+.meta-gov { color: #D9540B; }
+
+.card-title { 
+  font-size: 18px; 
+  font-weight: 800; 
+  color: #0F172A; 
+}
+
+/* Left-aligned content width to prevent overlapping the graphic background */
+.card-body-text { 
+  font-size: 13px; 
+  color: #334155; 
+  max-width: 175px; 
+  line-height: 1.5;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+/* Standardized Full-Height Right Graphics Container */
+.card-graphic {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 55%; 
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  pointer-events: none;
+  z-index: 1;
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+
+.card-action {
+  position: relative;
+  z-index: 10;
+  margin-top: auto;
+}
+
+/* Clean UI buttons */
+.card-btn {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-citizen { background-color: #0040A5; }
+.btn-innovator { background-color: #0F763E; }
+.btn-gov { background-color: #D9540B; }
+
+/* Bottom Footer Accent Ribbon */
+.footer-accent-divider {
+  width: 100%;
+  height: 12px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  opacity: 0.75;
+}
+
+/* Responsive viewports */
+@media (max-width: 1100px) {
+  .cards-grid { grid-template-columns: 1fr; gap: 24px; }
+  .card-body-text { max-width: 60%; }
+}
