@@ -1,7 +1,7 @@
-# 🚀 जन Spandan AI(Voice of People, Intelligence for Change)
+# 🚀 जन Spandan AI
 ### AI-Powered Public Grievance Intelligence & Innovation Platform
 
-![Jan Spandan AI Banner](assets/banner.png)
+![Jan Spandan AI Banner](src/assets/images/logo.png)
 
 ## 📌 Problem Statement
 
@@ -377,15 +377,6 @@ By transforming complaints into actionable intelligence, governments can solve p
 
 ### Homepage
 ![Homepage](src/assets/images/reference-homepage.png)
-
-### Citizen Dashboard
-![Citizen Dashboard](src/assets/images/citizen-card.png)
-
-### Government Dashboard
-![Government Dashboard](src/assets/images/government-card.png)
-
-### Innovator Portal
-![Innovator Portal](src/assets/images/innovator-card.png)
 
 ## 👥 Team Shrivers
 
