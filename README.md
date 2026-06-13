@@ -373,6 +373,19 @@ Jan Spandan AI helps build:
 By transforming complaints into actionable intelligence, governments can solve problems faster while innovators gain access to meaningful challenges.
 
 ---
+## 📸 Project Screenshots
+
+### Homepage
+![Homepage](src/assets/images/reference-homepage.png)
+
+### Citizen Dashboard
+![Citizen Dashboard](src/assets/images/citizen-card.png)
+
+### Government Dashboard
+![Government Dashboard](src/assets/images/government-card.png)
+
+### Innovator Portal
+![Innovator Portal](src/assets/images/innovator-card.png)
 
 ## 👥 Team Shrivers
 
