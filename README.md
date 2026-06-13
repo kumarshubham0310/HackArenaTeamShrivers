@@ -238,8 +238,8 @@ Libraries:
 ## Frontend
 
 - React.js
+- HTML
 - Tailwind CSS
-- ShadCN UI
 - Leaflet Maps
 
 ## Backend
