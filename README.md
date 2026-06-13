@@ -1,4 +1,4 @@
-# 🚀 जन Spandan AI
+# 🚀 जन Spandan AI(Voice of People, Intelligence for Change)
 ### AI-Powered Public Grievance Intelligence & Innovation Platform
 
 ![Jan Spandan AI Banner](assets/banner.png)
@@ -378,8 +378,8 @@ By transforming complaints into actionable intelligence, governments can solve p
 
 | Team Member | Responsibilities |
 |------------|------------------|
-| **Nilabh Kishlay** | Project Lead, AI/ML Development, Frontend Development, System Integration |
-| **Shubham Kumar** | Backend Development, Database Design, API Development, Deployment |
+| **Nilabh Kishlay** |  AI/ML Development, Frontend Development, System Integration |
+| **Shubham Kumar** | Project Lead, Backend Development, Database Design, API Development, Deployment |
 
 
 # 🏆 Hackathon Vision
